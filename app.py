@@ -1,4 +1,4 @@
-from transformers import pipeline
+
 import streamlit as st
 
 st.title("🤖 Chatbot de Recetas de Cocina")
@@ -21,4 +21,3 @@ if user_input:
         st.write(f"🧑‍🍳 Respuesta del chatbot: {response[0]['generated_text']}")
     except Exception as e:
         st.write(f"❌ Error al generar respuesta: {e}")
-
